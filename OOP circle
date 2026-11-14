@@ -1,0 +1,75 @@
+package javaapplication20;
+
+
+
+public class JavaApplication20 {
+
+    
+    public static void main(String[] args) {
+        Circle c1 = new Circle();
+        
+         c1.setRad(5);
+         c1.calArea();
+         c1.calRound();
+        
+        System.out.println(c1.getRad());
+        Circle c2 = new Circle();
+        
+        
+         c2.calArea();
+         c2.calRound();
+         
+        System.out.println(c2);
+   }
+          
+           
+}
+
+
+
+
+package javaapplication27;
+
+
+public class JavaApplication27 {
+
+public class circle{
+private int rad;
+    
+    public static final double PI=22.0/7;
+    public circle(){
+        
+    }
+    public circle(int rad){
+        this.rad=rad;
+    }
+    public void calArea(){
+        double area = PI*rad*rad;
+        System.out.println("Area : " + area);
+    }
+    public void calRound(){
+        double round = 2*PI*rad;
+        System.out.println("Round : " + round);
+    }
+    public void setRad(int rad){
+        if(rad>0){
+            this.rad=rad;
+        } else{
+            System.out.println("invalid rad");
+                    
+        }
+        
+    }
+    public int getRad(){
+        return rad;
+    }
+
+        @Override
+        public String toString(){
+            return "circle(rad=" + rad +")";
+        }
+    
+    
+}    
+    }
+    
